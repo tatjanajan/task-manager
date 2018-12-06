@@ -26,7 +26,6 @@ function loadEventListeners() {
 
   // event "filtriranje zadataka"
   filter.addEventListener('keyup', filterTasks);
-
 }
 
 // funkcija koja prikazuje zadatke pohranjene u localStorageu
@@ -59,12 +58,8 @@ function getTasks() {
 
     //appendamo li u ul
     taskList.appendChild(li);
-
   })
-
-
 }
-
 
 // funkcija addTask za dodavanje novog zadatka (poziva se unutar event listenera - form > submit)
 function addTask(e) {
@@ -127,8 +122,7 @@ function removeTask(e) {
       
       // pozivanje funkcije za uklanjanje iz localStoragea
       removeTaskFromLocalStorage(e.target.parentElement.parentElement);
-    }
-    
+    }    
   }
 }
 
