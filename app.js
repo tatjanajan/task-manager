@@ -21,7 +21,6 @@ function loadEventListeners() {
   taskList.addEventListener('click', removeTask); // budući da iksić za brisanje stavki iz liste kreiramo dinamički, moramo koristiti 'event delegation' - event stavljamo na samu listu (ul element)
 
   // event "očisti sve zadatke iz liste"
-  // clearBtn.addEventListener('click', clearTasks);
   clearBtn.addEventListener('click', clearTasks);
 
   // event "filtriranje zadataka"
