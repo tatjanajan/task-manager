@@ -144,7 +144,7 @@ function removeTaskFromLocalStorage(taskItem) {
 
   tasksArr.forEach(function(task, index){
     if(taskItem.textContent === task) {
-      tasksArr.splice(index, 1);
+      tasksArr.splice(index, 1); // splice je metoda kojom uklanjamo/dodajemo iteme iz arraya/u array. U ovom slučaju uklanjamo jedan item (to određuje brojka 1 u zagradi) koji ima određeni indeks (to određuje index u zagradi)
     }
   });
 
